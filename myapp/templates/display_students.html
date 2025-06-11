@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <table>
+            {% for stud in studs %}
+            <tr>
+                <td>{{stud.id}}</td>
+                <td>{{stud.unm}}</td>
+                <td>{{stud.prog}}</td>
+                <td>{{stud.sec}}</td>
+                <td>
+                    <a href="/myapp/update_student/{{stud.id}}">Edit</a>
+                    <a href="/myapp/delete_student/{{stud.id}}">Delete</a>
+                </td>
+            </tr>
+            
+            {% endfor %}
+        </table>
+    </body>
+</html>
